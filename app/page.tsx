@@ -1,7 +1,23 @@
 import {
-  ArrowLeft, ArrowUpLeft, Battery, CarFront, Check, CircleGauge,
-  Clock3, Disc3, Facebook, Instagram, MapPin, Menu, Phone,
-  ShieldCheck, Sparkles, Target, Wrench, Youtube
+  ArrowLeft,
+  ArrowUpLeft,
+  Battery,
+  CarFront,
+  Check,
+  CircleGauge,
+  Clock3,
+  Disc3,
+  Facebook,
+  Instagram,
+  MapPin,
+  Menu,
+  Phone,
+  ShieldCheck,
+  Sparkles,
+  Target,
+  Wrench,
+  Youtube,
+  type LucideIcon,
 } from "lucide-react";
 
 const services = [
@@ -51,16 +67,53 @@ export default function Home() {
       </section>
 
       <section className="trustStrip">
-        {[
-          ["۰۱","عیب‌یابی دقیق","با دستگاه‌های تخصصی روز دنیا",Target],
-          ["۰۲","تعمیر تخصصی","توسط تکنسین‌های با تجربه",Wrench],
-          ["۰۳","قیمت منصفانه","شفافیت در هزینه و کیفیت خدمات",ShieldCheck],
-          ["۰۴","تجربه و اعتماد","رضایت مشتریان اولویت ماست",Check],
-        ].map(([num,title,desc,Icon]) => {
-          const I = Icon as any;
-          return <div className="trustItem" key={String(num)}><b>{num}</b><I/><div><strong>{title}</strong><small>{desc}</small></div></div>
-        })}
-      </section>
+
+  {[
+    {
+      num: "۰۱",
+      title: "عیب‌یابی دقیق",
+      desc: "با دستگاه‌های تخصصی روز دنیا",
+      Icon: Target,
+    },
+    {
+      num: "۰۲",
+      title: "تعمیر تخصصی",
+      desc: "توسط تکنسین‌های با تجربه",
+      Icon: Wrench,
+    },
+    {
+      num: "۰۳",
+      title: "قیمت منصفانه",
+      desc: "شفافیت در هزینه و کیفیت خدمات",
+      Icon: ShieldCheck,
+    },
+    {
+      num: "۰۴",
+      title: "تجربه و اعتماد",
+      desc: "رضایت مشتریان اولویت ماست",
+      Icon: Check,
+    },
+  ].map(({ num, title, desc, Icon }: {
+    num: string;
+    title: string;
+    desc: string;
+    Icon: LucideIcon;
+  }) => {
+
+    return (
+      <div className="trustItem" key={num}>
+        <b>{num}</b>
+        <Icon />
+        <div>
+          <strong>{title}</strong>
+          <small>{desc}</small>
+        </div>
+      </div>
+    );
+
+  })}
+
+</section>
 
       <section id="services" className="section">
         <div className="sectionHead">
