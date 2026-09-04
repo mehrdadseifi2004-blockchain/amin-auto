@@ -63,7 +63,7 @@ export default function Home() {
             <a className="btn ghost" href="https://maps.google.com/?q=Mashhad,+SeyedRezi,+No.200" target="_blank">مسیریابی <MapPin size={18}/></a>
           </div>
         </div>
-        <div className="heroBadge"><span>+۱۰</span><small>سال تجربه</small></div>
+        <div className="heroBadge"><span>+۲۰</span><small>سال تجربه</small></div>
       </section>
 
       <section className="trustStrip">
