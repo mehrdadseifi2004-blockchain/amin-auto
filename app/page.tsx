@@ -192,7 +192,7 @@ export default function Home() {
       <footer>
         <div className="socials"><Instagram/><Facebook/><Youtube/></div>
         <span>© تمامی حقوق این سایت متعلق به تعمیرگاه خودرو امین است.</span>
-        <span>طراحی و توسعه وب</span>
+        <span>Design &amp; Development by: <a className="footerCredit" href="https://mehrdadseif.ir/" target="_blank" rel="noopener noreferrer">MehrdadSeif.ir</a></span>
       </footer>
     </main>
   );

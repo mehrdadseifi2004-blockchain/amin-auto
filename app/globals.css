@@ -13,3 +13,14 @@
 footer{width:min(1160px,92%);margin:auto;border-top:1px solid #1d1d1d;padding:28px 0;display:flex;justify-content:space-between;align-items:center;color:#555;font-size:10px}.socials{display:flex;gap:13px}.socials svg{width:15px}
 @media(max-width:900px){.nav nav,.navPhone{display:none}.mobileMenu{display:block}.nav{height:64px}.hero{min-height:650px}.heroContent{padding-top:55px}.hero h1{font-size:50px}.trustStrip{grid-template-columns:1fr 1fr}.trustItem:nth-child(2){border-left:0}.serviceGrid{grid-template-columns:1fr 1fr}.brandGrid{grid-template-columns:repeat(4,1fr)}.about{grid-template-columns:1fr 1fr}.stats{grid-column:1/-1}.beforeAfter{grid-template-columns:1fr;padding:28px}.comparison{height:250px}.contact{grid-template-columns:1fr}.map{height:230px}}
 @media(max-width:560px){.hero{min-height:610px}.heroContent{width:88%}.hero h1{font-size:42px;letter-spacing:-1px}.hero p{font-size:12px}.actions{flex-wrap:wrap}.btn{flex:1;min-width:145px}.heroBadge{display:none}.trustStrip{grid-template-columns:1fr;margin-top:-25px}.trustItem{border-left:0;border-bottom:1px solid #2b2b2b}.trustItem:last-child{border-bottom:0}.section{padding:72px 0}.serviceGrid{grid-template-columns:1fr}.serviceCard{min-height:220px}.brandGrid{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.workshopImage{height:230px}.stats{grid-column:auto}.contactCopy{padding:28px}.contactCopy .btn{min-width:0}.sectionHead h2{font-size:23px}footer{flex-direction:column;gap:14px;text-align:center}}
+
+
+/* Footer design credit */
+.footerCredit {
+  color: var(--orange);
+  text-decoration: none;
+  font-weight: 700;
+}
+.footerCredit:hover {
+  text-decoration: underline;
+}
